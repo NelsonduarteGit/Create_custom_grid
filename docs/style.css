@@ -1,0 +1,46 @@
+:root {
+  font-family: monospace;
+  color: #e0af68;
+  margin: 0;
+  box-sizing: border-box;
+  background-color: #414868;
+}
+
+.page {
+  width: 80%;
+  margin: 0 auto;
+}
+
+h1 {
+  color: #7aa2f7;
+  font-size: 35px;
+}
+
+#firstp {
+  margin-top: -20px;
+}
+
+#header42 {
+  width: 100%;
+}
+
+h2 {
+  font-size: 30px;
+  color: #7aa2f7;
+  width: 90%;
+  border-bottom: 2px solid #807678;
+  margin-bottom: 5px;
+}
+
+h3 {
+  color: #f7768e;
+  font-size: 20px;
+  font-family: monospace;
+  font-style: italic;
+  margin-bottom: -10px;
+}
+
+#license {
+  margin-top: 100px;
+  border-top: 2px solid #807678;
+}
