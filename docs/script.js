@@ -8,35 +8,44 @@ function rush00() {
     var bola = "O";
     var traço = "-";
     var barra = "|";
-    var espaço = " ";
+    var espaço = "&nbsp";
 
     // codigo para a grid
-    let b;
-    for (let a = 0; a < x; a++) {
-    b = 0;
-    for (let b = 0; b < y; b++) {
-      // 1O 2O 3O 4O
-      if (
-        (a == 0 && b == 0) ||
-        (a == 0 && b == x - 1) ||
-        (a == y - 1 && b == 0) ||
-        (a == y - 1 && b == x - 1)
-      )
-        grid = grid + bola + "\n";
-    
-      // - de cima, - de baixo
-      else if (
-        (a == 0 && b > 0 && b != x - 1) ||
-        (a == y - 1 && b > 0 && b != x - 1)
-      )
-        grid = grid + traço;
-      // | da esquerda, | da direita
-      else if ((a > 0 && b == 0 && a != x - 1) || (a > 0 && b == x - 1))
-        grid = grid + barra;
-      // parte de dentro da grid
-      else grid = grid + espaço;
+    var a = 0;
+    var b = 0;
+    while (a < y)
+    {
+        b = 0;
+        while (b < x)
+        {
+            // 10 30 40
+            if ((a == 0 && b == 0)                    
+            || (a == (y - 1) && b == 0)             
+            || (a == (y - 1) && b == (x - 1)))    
+                grid = grid + bola;
+            
+            // 20    
+            else if (a == 0 && b == (x - 1))            
+                grid = grid + bola + "<br />";
+            
+            // - de cima, - de baixo 
+            else if ((a == 0 && b > 0 && b != (x - 1))        
+            || (a == (y - 1) && b > 0 && b != (x - 1)))     
+                grid = grid + traço;
+            
+            // | da esquerda
+            else if (a > 0 && b == 0)        
+                grid = grid + barra;
+            else if (a > 0 && b == (x - 1))
+                grid = grid + barra + "<br />";
+            
+            // espaço no meio
+            else
+                grid = grid + espaço;
+            b++;
+        }
+        a++;
     }
-}
     console.log(grid);
     resposta.innerHTML = grid;
 }
