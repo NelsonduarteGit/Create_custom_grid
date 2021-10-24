@@ -109,3 +109,11 @@ button {
   padding: 10px;
   /* color: #e4ddb3; */
 }
+
+@media only screen and (max-width: 600px) { 
+
+  .Rushes {
+    display: block;
+  }
+  
+}
