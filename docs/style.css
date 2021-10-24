@@ -45,6 +45,10 @@ h3 {
   border-top: 2px solid #807678;
 }
 
+.ex00 {
+  margin-right: 50px;
+}
+
 .insert {
   display: flex;
   flex-direction: row;
@@ -83,6 +87,10 @@ button {
 }
 
 
+.Rushes {
+  display: flex;
+  flex-direction: row;
+}
 
 #mostrar_grid {
   display: inline-block;
@@ -90,5 +98,14 @@ button {
   text-align: left;
   font-size: 1.2rem;
   padding: 10px;
-  color: #e4ddb3;
+  /* color: #e4ddb3; */
+}
+
+#mostrar_grid1 {
+  display: inline-block;
+  margin: 0 auto;
+  text-align: left;
+  font-size: 1.2rem;
+  padding: 10px;
+  /* color: #e4ddb3; */
 }
